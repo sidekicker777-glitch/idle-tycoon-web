@@ -1,1 +1,1 @@
-# idle-tycoon-web
+Live build trigger
