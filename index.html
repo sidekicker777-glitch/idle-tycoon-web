@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Idle Tycoon (Offline)</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#111111" />
+</head>
+<body>
+  <div id="hud">
+    <div class="row">
+      <div class="stat">Cash: <span id="cash">$0</span></div>
+      <div class="stat">Rate: <span id="rate">$0</span>/s</div>
+    </div>
+    <div class="hint">Tap a building to upgrade. Works offline.</div>
+  </div>
+
+  <canvas id="c"></canvas>
+
+  <div id="panel" class="panel hidden">
+    <div class="panel-title" id="pTitle">Building</div>
+    <div class="panel-body">
+      <div>Level: <span id="pLevel">1</span></div>
+      <div>Production: <span id="pProd">$1</span>/s</div>
+      <div>Upgrade Cost: <span id="pCost">$10</span></div>
+    </div>
+    <div class="panel-actions">
+      <button id="btnUpgrade">Upgrade</button>
+      <button id="btnClose" class="secondary">Close</button>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
